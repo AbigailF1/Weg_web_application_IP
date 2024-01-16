@@ -1,0 +1,111 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5rem;
+  
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 10rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 200px; /* Adjust the width as needed */
+  height: 200px; 
+}
+
+.logo svg {
+  
+}
+
+h1 {
+  margin-left: 0.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+.input-info {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  margin-top: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  margin: 0 0.5rem;
+} 
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -1rem;
+  }
+
+  .left-section,
+  .right-section {
+    padding: 0;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  .input-info {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .social-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .social-icon {
+    margin: 0.5rem;
+  }
+}
+
+/* Additional CSS styles as needed */
