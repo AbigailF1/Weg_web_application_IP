@@ -1,0 +1,49 @@
+* {
+  box-sizing: inherit;
+  margin: 0px;
+  margin: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  height: 100px;
+}
+
+center {
+  width: 50vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.post {
+  padding: 20px;
+  margin: 20px 0px;
+  background-color: #eeeeee;
+  border-radius: 10px;
+
+}
+
+.post .content {
+  width: 100%;
+}
+
+.content video,
+.content img {
+  width: 100%;
+}
+
+.sidebar {
+  color: grey;
+  width: 30vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
