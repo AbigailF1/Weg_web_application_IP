@@ -27,7 +27,11 @@ center {
   margin: 20px 0px;
   background-color: #eeeeee;
   border-radius: 10px;
+  width: 400px;
+}
 
+h1 {
+  align-self: center;
 }
 
 .post .content {
