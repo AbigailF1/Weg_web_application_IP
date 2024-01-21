@@ -1,0 +1,95 @@
+/* Reset some default browser styles */
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 300px;
+    background-color: #f7f9fa;
+    padding: 20px;
+  }
+  
+  .profile {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-name {
+    margin: 10px 0;
+  }
+  
+  .profile-username {
+    color: #657786;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #1da1f2;
+    font-weight: bold;
+  }
+  
+  /* Content */
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .header {
+    margin-bottom: 30px;
+  }
+  
+  .page-title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .section-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .profile-info {
+    line-height: 1.5;
+  }
+  
+  /* Responsive styles */
+  @media only screen and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+    }
+    .sidebar {
+      width: 100%;
+      padding: 10px;
+    }
+    .content {
+      padding: 10px;
+    }
+  }

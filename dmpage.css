@@ -1,0 +1,143 @@
+html, body {
+    height: 100%;
+    margin: 0;
+
+}
+.container {
+    display: flex;
+    height: 100%;
+    position: relative;
+
+}
+.right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.taskbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #6f4e37;
+    padding: 5px;
+  
+}
+.profilepic, .myprofile{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+
+}
+.name {
+    margin-left: 5px;
+
+}
+.profilepic img, .myprofile img {
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.chat {
+    background-image: url("images/wallpaperflare.com_wallpaper.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    padding: 10px;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+  
+}
+.chatbox {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    
+}
+.chat-text-bubble {
+    color:black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+
+}
+.chat-text-bubble.sent {
+    align-self: flex-end;
+    background-color: #dcf8c6;
+
+}
+.chat-text-bubble.recieved {
+    align-self: flex-start;
+    background-color: lightblue;
+
+}
+
+.chatbox input[type="text"]{
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+
+}
+.chatbox {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+
+}
+.chatbox button{
+    border-radius: 50%;
+    background-image: url(images/send-icon.png);
+    background-size: cover;
+
+}
+.sidebar {
+
+    border-style: double;
+    border-width: thin;
+    box-sizing: border-box;
+    background-color: #6f4e37;
+    flex-shrink: 0;
+   
+}
+
+.sidebar input[type="text"]{
+    margin-bottom: 10px;
+    height: 30px;
+
+}
+
+.talk {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-style: solid;
+    border-width: thin;
+    margin-bottom: 1px;
+    padding: 10px;
+
+}
+.talk a{
+    color: black;
+
+}
+
+.talk button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(images/send-icon.png);
+    background-size: cover;
+    
+}
