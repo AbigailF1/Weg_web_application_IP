@@ -1,61 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DM Page</title>
   <link rel="stylesheet" href="dmpage.css">
   <link rel="icon" href="images/favicon.ico.png" type="image/x-icon">
-  
+
 </head>
+
 <body>
 
   <div class="container">
     <div class="sidebar">
+      <div class="placeholder">
+
+      </div>
       <div class="myprofile">
         <a href="profile_page.html">
-          <img src="images/profile-pic.jpg" alt="Profile Pic" width="50" height = "50" >
+          <img src="images/profile-pic.jpg" alt="Profile Pic" width="50" height="50">
         </a>
         <span class="name">
           You
         </span>
-       
+
       </div>
-        <input type="text" placeholder="Search...">
 
-        <div class="talk">
-          <a href="somelink">tamirat</a>
-          <button > </button>
-        </div>
+      <div class="talk">
+        <a href="somelink">tamirat</a>
+      </div>
 
-        <div class="talk">
-          <a href="chat">niguse</a> 
-          <button > </button>
-        </div>
-        <div class="talk">
-          <a href="chat">bewketu</a>
-          <button > </button>
-        </div>
-        <div class="talk">
-          <a href="chat">ahlam</a>
-          <button > </button>
-        </div>
-        <div class="talk">
-          <a href="chat">ebra</a>
-          <button > </button>
-        </div>
-        <div class="talk">
-          <a href="chat">asnake</a>
-          <button > </button>
-        </div>
-        
+      <div class="talk">
+        <a href="chat">niguse</a>
+      </div>
+      <div class="talk">
+        <a href="chat">bewketu</a>
+      </div>
+      <div class="talk">
+        <a href="chat">ahlam</a>
+      </div>
+      <div class="talk">
+        <a href="chat">ebra</a>
+      </div>
+      <div class="talk">
+        <a href="chat">asnake</a>
+      </div>
+      <div id="homepage">
+        <a href="homepage.html">homepage</a>
+      </div>
+
     </div>
 
     <div class="right">
 
       <div class="taskbar">
+        <div id="toggle-menu">
+          <div class="bars"></div>
+          <div class="bars"></div>
+          <div class="bars"></div>
+        </div>
         <div class="profilepic">
           <a href="profile_page.html">
-            <img src="images/profile.jpg" alt="Profile Pic" width="50" height = "50" >
+            <img src="images/profile.jpg" alt="Profile Pic" width="50" height="50">
           </a>
           <span class="name">
             tamirat
@@ -63,39 +69,47 @@
         </div>
       </div>
 
-      <div class="chat" >
-        
+      <div class="chat">
+
         <div class="chat-text-bubble recieved">
-          <p>tamirat : hey </p>
-        </div> 
+          <p> hey </p>
+        </div>
         <div class="chat-text-bubble recieved">
-          <p>tamirat : are u going tmrw?</p>
+          <p> are u going tmrw?</p>
         </div>
         <div class="chat-text-bubble sent">
-          <p>You: yeah. u?</p>
+          <p> yeah. u?</p>
         </div>
         <div class="chat-text-bubble recieved">
-          <p>tamirat : <audio controls>
+          <p> </p><audio controls>
             <source src="audio/download.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
-          </audio> </p>
+          </audio>
         </div>
         <div class="chat-text-bubble sent">
-          <p>You: what abt 7 am</p>
+          <p> what abt 7 am</p>
         </div>
         <div class="chat-text-bubble recieved">
-          <p>tamirat : that will work</p>
+          <p> that will work</p>
         </div>
         <div class="chat-text-bubble sent">
-          <p>You: okay i'll call you </p>
+          <p> okay i'll call you </p>
         </div>
       </div>
-      <div class="chatbox">
-        <input type="text" placeholder="Type a message...">
-        <button>Send</button>
-      </div>
-      
+      <form action="none">
+
+        <div class="chatbox">
+          <input id="text-input" type="text" placeholder="Type a message...">
+          <button id="send"></button>
+
+        </div>
+      </form>
+
     </div>
   </div>
+  <script src="dm_page.js">
+
+  </script>
 </body>
+
 </html>
