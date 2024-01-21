@@ -1,75 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>HomePage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>weghomepage</title>
 </head>
-
 <body>
-  <table>
-    <tr>
-      <div height=1000px width=20px class="sidebar">
-        <a href="homepage.html">Weg</a>
+<!-- sidebar beginning -->
+<div class="container">
+  <div class="sidebar">
+    <div class="top">
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="41" viewBox="0 0 51 41" fill="none">
+          <line y1="-0.5" x2="29.5479" y2="-0.5" transform="matrix(0.380738 0.924683 -0.920141 0.391588 0 8.26025)" stroke="black"/>
+          <line y1="-0.5" x2="29.151" y2="-0.5" transform="matrix(-0.398604 0.917123 -0.912189 -0.409771 49.375 8.26025)" stroke="black"/>
+          <path d="M27.0002 40L26.8588 40.4796L27.0463 40.5349L27.2216 40.4483L27.0002 40ZM11.8843 35.0203C11.6194 34.9422 11.3414 35.0936 11.2633 35.3584C11.1852 35.6233 11.3365 35.9013 11.6014 35.9795L11.8843 35.0203ZM38.3965 33.8147L26.7788 39.5517L27.2216 40.4483L38.8392 34.7113L38.3965 33.8147ZM27.1417 39.5204L11.8843 35.0203L11.6014 35.9795L26.8588 40.4796L27.1417 39.5204Z" fill="black"/>
+          <ellipse cx="25" cy="7.62487" rx="25" ry="7.62487" fill="#624727"/>
+          <ellipse cx="1.56426" cy="11.1075" rx="1.56426" ry="11.1075" transform="matrix(0.964841 -0.262833 0.254858 0.966978 9.72229 15.4043)" fill="#087D5A"/>
+          <ellipse cx="26.2151" cy="27.037" rx="1.5625" ry="11.1196" fill="#E2F505"/>
+          <ellipse cx="1.56426" cy="11.1075" rx="1.56426" ry="11.1075" transform="matrix(0.964841 0.262833 -0.254858 0.966978 39.4014 13.9803)" fill="#E44A28"/>
+        </svg>  
+        <h3> WEG</h3>
       </div>
-    </tr>
-    <tr>
-      <td width=300px valign=top>
-        <a href="profile.html">Profile</a><br />
-        <a href="homepage.html">HomePage</a><br />
-        <a href="#">Notifications</a><br />
-        <a href="#">Messages</a><br />
-      </td>
-      <td>
-        <center>
-          <div class="post">
-            <img width=100px height=100px src="images/profile1.webp" />
-            <h3>Username</h3>
-            <h4>@userId</h4>
-            <p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi
-              Lorem
-              eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint
-              cupidatat
-              ullamco ut ea consectetur et est culpa et culpa duis.</p>
-            <video>
-              <source
-                src="https://download-video.akamaized.net/v2-1/playback/5d26a3cc-d4d7-4d47-8fd7-04c070337c28/e46f7f29-681ae096?__token__=st=1701091961~exp=1701106361~acl=%2Fv2-1%2Fplayback%2F5d26a3cc-d4d7-4d47-8fd7-04c070337c28%2Fe46f7f29-681ae096%2A~hmac=ddfd177c2b5bd9bfcc521dcf8c709dd8fe921ba0aff9a2ffd2cbe659786eb26c&r=dXMtY2VudHJhbDE%3D"
-                type>
-            </video>
-          </div>
-          <div class="post">
-            <img width=100px height=100px src="images/profile1.webp" />
-            <h3>Username</h3>
-            <h4>@userId</h4>
-            <p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi
-              Lorem
-              eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint
-              cupidatat
-              ullamco ut ea consectetur et est culpa et culpa duis.</p>
-            <img width=400px src="images/kitty.png" />
-          </div>
-          <div class="post">
-            <img width=100px height=100px src="images/profile1.webp" />
-            <h3>Username</h3>
-            <h4>@userId</h4>
-            <p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi
-              Lorem
-              eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint
-              cupidatat
-              ullamco ut ea consectetur et est culpa et culpa duis.</p>
-          </div>
-          <video width="800" controls>
-            <source
-              src="https://download-video.akamaized.net/v2-1/playback/5d26a3cc-d4d7-4d47-8fd7-04c070337c28/e46f7f29-681ae096?__token__=st=1701091961~exp=1701106361~acl=%2Fv2-1%2Fplayback%2F5d26a3cc-d4d7-4d47-8fd7-04c070337c28%2Fe46f7f29-681ae096%2A~hmac=ddfd177c2b5bd9bfcc521dcf8c709dd8fe921ba0aff9a2ffd2cbe659786eb26c&r=dXMtY2VudHJhbDE%3D"
-              type="">
-          </video>
-        </center>
-      </td>
-      <td width=300px>
-      </td>
+      <i class="bx bx-menu" id="btn"></i>
+    </div>
+    <div class="user">
+      <img src="images/selfie-images.jpg" alt="profile-pic" class="user-img">
+      <div>
+        <p class="bold">John.B</p>
+        <p>user</p> 
+      </div>
+    </div>
+    <ul class="sidebar-nav">
+      <!-- homepage -->
+      <li>
+        <a href="#">
+          <i class='bx bxs-home'></i>
+            <span class="nav-item"> homepage </span>
+        </a>
+        <span class="tooltip"> homepage</span>
+      </li>
+      <!-- Notifications -->
+      <li>
+        <a href="#">
+          <i class='bx bxs-notification'></i>
+            <span class="nav-item"> Notifications </span>
+        </a>
+        <span class="tooltip"> Notifications</span>
+      </li>
+      <!-- Wegs -->
+      <li>
+        <a href="#">
+          <i class='bx bxs-message-rounded-dots'></i>  
+          <span class="nav-item"> Wegs </span>
+        </a>
+        <span class="tooltip"> Wegs</span>
+      </li>
+      <!-- settings -->
+      <li>
+        <a href="#">
+            <i class="bx bx-cog"></i>
+            <span class="nav-item"> settings </span>
+        </a>
+        <span class="tooltip"> settings</span>
+      </li>
+      <!-- Logout -->
+      <li>
+        <a href="#">
+            <i class="bx bx-log-out"></i>
+            <span class="nav-item"> Logout </span>
+        </a>
+        <span class="tooltip"> Logout</span>
+      </li>
+      
+    </ul>
+    </div>
+<!-- sidebar ending -->
+ <div class="main-content">
+  <!-- feed start -->
+  <div class="feed">
+    <div class="feed__header">
+      <h2> Home Page </h2>
+    
+    </div>
+    <!-- Wegbox beginning-->
+    <div class="wegBox">
+      <form>
+        <div class="wegbox__input">
+          <img
+          src="images/selfie-images.jpg"
+          alt=""
+          />
+          <input type="text" placeholder="What do you want to share on weg">
+        </div>
+        <button class="wegBox__wegButton"> Weg </button>
+      </form>
+    </div>
+    <!-- Wegbox ending-->
 
-    </tr>
+    <!-- post beggins -->
+    <div class="post">
+      <div class="post__card">
+        <img
+        src="images/selfie-images3.jpg"
+        alt=""
+        />
+      </div>
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3> Jhonson Doe
+                <span class="post__headerSpecial">
+                 <span class="post__badge">@JhonsonD</span> 
+                    </span>
+              </h3>
+            </div>
+         <div class="post__headerDescription">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. </p>
+            </div>
+          </div>
+          <img src="images/kitty.png" alt="kitten">
+          <div class="post__footer">
+            <span class="material-icons"> <i class='bx bxs-heart'> like </i></span>
+            <span class="material-icons"> <i class='bx bxs-message-square-dots'>comment</i></span>
+            <span class="material-icons"><i class='bx bx-repost'>repost</i></span>
+          </div>
+      </div>
 
-  </table>
+    </div>
+
+    <!-- post ends -->
+
+     <!-- post beggins -->
+     <div class="post">
+      <div class="post__card">
+        <img
+        src="images/selfie-images3.jpg"
+        alt=""
+        />
+      </div>
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3> Jhonson Doe
+                <span class="post__headerSpecial">
+                 <span class="post__badge">@JhonsonD</span> 
+                    </span>
+              </h3>
+            </div>
+         <div class="post__headerDescription">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. </p>
+            </div>
+          </div>
+          <img src="images/kitty.png" alt="kitten">
+          <div class="post__footer">
+            <span class="material-icons"> <i class='bx bxs-heart'> like </i></span>
+            <span class="material-icons"> <i class='bx bxs-message-square-dots'>comment</i></span>
+            <span class="material-icons"><i class='bx bx-repost'>repost</i></span>
+          </div>
+      </div>
+
+    </div>
+
+    <!-- post ends -->
+
+   
+  </div>
+  <!-- feed ends -->
+
+ </div>
+ 
+</div>
+   <!-- widget begins -->
+   <div class="widgets">
+    <div class="widgets__input">
+      <span class="widgets__searchIcon"><i class='bx bx-search'></i> </span>
+      <input type="text" placeholder="search weg">
+    </div>
+  </div>
+  
+  <!-- widget ends  -->
+
 </body>
-
+<script src="homepage.js"></script>
 </html>
