@@ -1,6 +1,6 @@
 Title: Weg web application <br>
-Group: 6 
-Group Members:
+Group: 6  <br>
+Group Members: <br>
 --------------------------------------------------------
 Name                         |          ID
 --------------------------------------------------------
