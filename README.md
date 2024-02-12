@@ -1,4 +1,4 @@
-Title: Weg web application
+Title: Weg web application <br>
 Group: 6 
 Group Members:
 --------------------------------------------------------
