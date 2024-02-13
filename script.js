@@ -1,31 +1,32 @@
-str = `
-{
-	"user1": {
-		"name": "abenezer",
-		"password": "12345678"
-	},
-	"user2": {
-		"name": "abigail",
-		"password": "12345678"
-	}
-}
-`;
-const username_input = document.getElementById("username");
-const password_input = document.getElementById("password");
-const login_btn = document.getElementById("btn");
-const userinfo = JSON.parse(str);
+let swiper = new Swiper(".mySwiper", {
+    slidesPerView: 6,
+    spaceBetween: 5 ,
+}) 
 
-console.log(userinfo);
-function validate() {
-	uname = username_input.value;
-	upass = password_input.value;
-	for (user in userinfo) {
-		if (uname === userinfo[user].name) {
-			if (userinfo[user].password === upass) {
-				return true;
-			}
-		}
-	}
-	alert("The username or password you just entered is incorrect");
-	return false;
-}
+// start profile popup
+
+// window Scroll
+window.addEventListener('scroll', ()=>{
+    document.querySelector('.profile-popup').style.display= 'none'
+})
+
+document.querySelectorAll('#my-profile-picture').forEach(AllProfile =>{
+    AllProfile.addEventListener('click', ()=>{
+        document.querySelector('.profile-popup').style.display="flex"
+
+    })
+});
+
+document.querySelectorAll('.close').forEach(AllProfile => {
+    AllProfile.addEventListener('click', ()=>{
+        document.querySelector('.popup').style.display="none"
+
+    })
+})
+
+document.querySelector('#profile-upload').addEventListener('change', () =>{
+    document.querySelectorAll('#my-profile-picture img').forEach(AllMyProfileImg=>{
+        AllMyProfileImg.src= URL.createObjectURL(document.querySelector('#profile-upload').files[0])
+    })
+})
+
