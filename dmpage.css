@@ -29,7 +29,7 @@ p {
 nav {
   position: fixed;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   top: 0px;
   left: 0px;
   width: 100%;
@@ -42,6 +42,7 @@ nav {
   min-width: 100%;
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
 }
 
 .profilepic,
@@ -55,19 +56,15 @@ nav {
   height: 80px;
 }
 
-
 .name {
   margin-left: 5px;
-
 }
 
 .profilepic img,
 .myprofile img {
   border-radius: 50%;
   object-fit: cover;
-
 }
-
 
 .chatbox {
   display: flex;
@@ -75,7 +72,6 @@ nav {
   background-color: white;
   padding: 10px;
   bottom: 0;
-
 }
 
 .chat-text-bubble {
@@ -84,18 +80,14 @@ nav {
   border-radius: 25px;
 }
 
-
-
 .chat-text-bubble.sent {
   align-self: flex-end;
   background-color: #dcf8c6;
-
 }
 
 .chat-text-bubble.recieved {
   align-self: flex-start;
   background-color: lightblue;
-
 }
 
 audio {
@@ -103,9 +95,7 @@ audio {
 }
 
 audio::-webkit-media-controls-panel {
-
   background-color: lightblue;
-
 }
 
 .chatbox input[type="text"] {
@@ -114,7 +104,6 @@ audio::-webkit-media-controls-panel {
   font-size: 14px;
   border: none;
   outline: none;
-
 }
 
 .chatbox {
@@ -122,14 +111,12 @@ audio::-webkit-media-controls-panel {
   width: 100%;
   background-color: white;
   padding: 10px;
-
 }
 
 .chatbox button {
   border-radius: 50%;
   background-image: url(images/send-icon.png);
   background-size: cover;
-
 }
 
 .sidebar {
@@ -139,13 +126,11 @@ audio::-webkit-media-controls-panel {
   min-width: 200px;
   background-color: #6f4e37;
   z-index: 1;
-
 }
 
 .sidebar input[type="text"] {
   margin-bottom: 10px;
   height: 30px;
-
 }
 
 .talk {
@@ -159,13 +144,11 @@ audio::-webkit-media-controls-panel {
   margin: 10px;
   border-radius: 25px;
   padding: 10px;
-
 }
 
 .talk a {
   color: black;
   text-decoration: none;
-
 }
 
 a {
@@ -189,15 +172,12 @@ form {
 }
 
 form button {
-
   position: absolute;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   right: 10px;
 }
-
-
 
 #toggle-menu {
   position: absolute;
@@ -217,4 +197,5 @@ form button {
   background-color: #fff;
 }
 
-@media (min-width: 720px) {}
+@media (min-width: 720px) {
+}

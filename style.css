@@ -563,3 +563,120 @@ aside label {
 }
 
 /* end profile popup */
+
+/* Start add post popup */
+
+.popup-box {
+  width: 400px;
+  height: 460px;
+  background: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--border-radius);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.add-post-popup {
+  display: flex;
+}
+
+.add-post-popup {
+  gap: 1rem;
+}
+
+.post-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.post-title label {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.post-title input {
+  border: 1px solid var(--color-light);
+  padding: var(--card-padding);
+  border-radius: var(--border-radius);
+  font-size: 1.1rem;
+}
+
+.post-title input:focus {
+  border: 1px solid var(--color-gray);
+}
+
+.post-img {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.post-img input[type="file"] {
+  display: none;
+}
+
+.post-img img {
+  width: 6rem;
+  margin: auto;
+}
+
+.post-img .feed-upload-button {
+  padding: var(--card-padding);
+  border: 2px dashed var(--color-dark); /* Corrected property */
+  font-weight: bold;
+}
+.popup {
+  display: none;
+}
+
+/* End add post popup */
+
+@media only screen and (max-width: 768px) {
+  /* Navbar adjustments */
+  nav .search-bar input[type="search"] {
+    width: 50vw;
+  }
+
+  main {
+    top: 5rem;
+  }
+
+  .main-container {
+    grid-template-columns: 100%;
+  }
+
+  .main-left {
+    display: none;
+  }
+
+  /* Stories adjustments */
+  .stories-wrapper {
+    padding: 3rem;
+    height: auto !important;
+    overflow-y: scroll;
+    margin-top: 5rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /* Navbar adjustments */
+  nav .search-bar input[type="search"] {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjustments for Navbar */
+  nav .search-bar input[type="search"] {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  nav .search-bar input[type="search"] {
+    width: 70vw;
+  }
+}
