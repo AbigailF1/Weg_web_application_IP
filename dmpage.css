@@ -45,7 +45,12 @@ nav {
   overflow-y: scroll;
 }
 
-.profilepic,
+.profilepic {
+  display: flex;
+  cursor: pointer;
+  padding: 10px;
+  align-items: center;
+}
 .myprofile {
   display: flex;
   cursor: pointer;
@@ -58,6 +63,7 @@ nav {
 
 .name {
   margin-left: 5px;
+  color: white;
 }
 
 .profilepic img,
